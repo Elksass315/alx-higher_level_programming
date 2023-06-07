@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
-last = int(str(number)[-1])
+last = int(str(abs(number))[-1])
 print(f"Last digit of {number} is {last} and is",end = " ")
 if last == 0:
     print("0")
