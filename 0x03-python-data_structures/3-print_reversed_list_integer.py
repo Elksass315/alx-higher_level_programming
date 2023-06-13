@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#3-print_reversed_list_integer.py
+# 3-print_reversed_list_integer.py
 
 def print_reversed_list_integer(my_list=[]):
     """print"""
@@ -8,4 +8,4 @@ def print_reversed_list_integer(my_list=[]):
 
     while i >= 0:
         print("{:d}".format(my_list[i]))
-        i = i - 1 
+        i = i - 1
