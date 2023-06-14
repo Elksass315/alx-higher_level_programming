@@ -4,7 +4,7 @@ def uniq_add(my_list=[]):
     lie = []
     resulit = 0
 
-    for i in mu_list:
+    for i in my_list:
         if i not in lie:
             resulit = resulit + i
             lie.append(i)
