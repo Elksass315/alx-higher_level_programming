@@ -10,9 +10,9 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         """new Rectangle.
 
-        Args:
-            width (int): The width of the rectangle.
-            height (int): The height of the rectangle.
+        Attributes:
+            number_of_instances (int): The number of Rectangle instances.
+            print_symbol (any): The symbol used for string representation.
         """
         type(self).number_of_instances += 1
         self.width = width
