@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 """Solves the N-queens puzzle.
 
-The N queens puzzle is the challenge of placing N non-attacking queens on an N×N chessboard. Write a program that solves the N queens problem.
+Determines all possible solutions to placing N
+N non-attacking queens on an NxN chessboard.
 
+Example:
+    $ ./101-nqueens.py N
 
 N must be an integer greater than or equal to 4.
 
@@ -11,24 +14,24 @@ Attributes:
     solutions (list): A list of lists containing solutions.
 
 Solutions are represented in the format [[r, c], [r, c], [r, c], [r, c]]
-where `r` for row and `c` for column, where a
+where `r` and `c` represent the row and column, respectively, where a
 queen must be placed on the chessboard.
 """
 import sys
 
 
 def init_board(n):
-    """Initialize an `n`x`n` board with 0."""
+    """Initialize an `n`x`n` sized chessboard with 0's."""
     board = []
     [board.append([]) for i in range(n)]
     [row.append(' ') for i in range(n) for row in board]
     return (board)
 
 
-def deepcopy(board):
-    """Return a copy of chessboard."""
+def board_deepcopy(board):
+    """Return a deepcopy of a chessboard."""
     if isinstance(board, list):
-        return list(map(deepcopy, board))
+        return list(map(board_deepcopy, board))
     return (board)
 
 
@@ -43,10 +46,11 @@ def get_solution(board):
     return (solution)
 
 
-def out(board, row, col):
+def xout(board, row, col):
     """X out spots on a chessboard.
 
-    All spots where non-attacking queens can no longer plaed.
+    All spots where non-attacking queens can no
+    longer be played are X-ed out.
 
     Args:
         board (list): The current working chessboard.
@@ -112,7 +116,7 @@ def recursive_solve(board, row, queens, solutions):
 
     for c in range(len(board)):
         if board[row][c] == " ":
-            tmp_board = deepcopy(board)
+            tmp_board = board_deepcopy(board)
             tmp_board[row][c] = "Q"
             xout(tmp_board, row, c)
             solutions = recursive_solve(tmp_board, row + 1,
@@ -134,5 +138,5 @@ if __name__ == "__main__":
 
     board = init_board(int(sys.argv[1]))
     solutions = recursive_solve(board, 0, 0, [])
-    for s in solutions:
-        print(s)
+    for sol in solutions:
+        print(sol)
