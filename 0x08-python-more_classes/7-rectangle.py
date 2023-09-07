@@ -63,10 +63,10 @@ class Rectangle:
 
         s = []
         for i in range(self.__height):
-            [s.append(self.print_symbol) for j in range(self.__width)]
+            [s.append(str(self.print_symbol) for j in range(self.__width)]
             if i != self.__height - 1:
                 s.append("\n")
-        return ("".join(s_rep))
+        return ("".join(s))
 
     def __repr__(self):
         """Return the string representation of the Rectangle."""
