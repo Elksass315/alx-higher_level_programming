@@ -70,6 +70,7 @@ class Rectangle:
         str_represntation = "Rectangle(" + str(self.__width)
         str_represntation += ", " + str(self.__height) + ")"
         return (str_represntation)
+
     def __del__(self):
         """Print the message when an instance of Rectangle is deleted"""
         print("Bye rectangle...")
