@@ -7,7 +7,7 @@ def matrix_divided(matrix, div):
     """function that divides all elements of a matrix.
 
     Args:
-        matrix (list): list of lists of integers or floats, 
+        matrix (list): list of lists of integers or floats,
         div (int/float): The divisor.
     Raises:
         TypeError: If the matrix contains non-numbers.
