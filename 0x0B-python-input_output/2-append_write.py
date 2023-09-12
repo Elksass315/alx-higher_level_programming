@@ -2,7 +2,7 @@
 """file appinding func"""
 
 
-def write_file(filename="", text=""):
+def append_write(filename="", text=""):
     """append a string to a UTF8 text file.
 
     Args:
