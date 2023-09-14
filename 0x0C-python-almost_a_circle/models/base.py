@@ -87,12 +87,12 @@ class Base:
 
             return:
                 If the file doesn’t exist, return an empty list
-                Otherwise, return a list of instances 
+                Otherwise, return a list of instances
         """
         filename = str(cls.__name__) + ".json"
         try:
             with open(filename, "r") as f:
-                l = Base.from_json_string(f.read())
-                return [cls.create(**i) for i in l]
+                listOfDict = Base.from_json_string(f.read())
+                return [cls.create(**i) for i in listOfDict]
         except IOError:
             return []
