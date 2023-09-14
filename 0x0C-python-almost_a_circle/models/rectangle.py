@@ -94,24 +94,28 @@ class Rectangle(Base):
             [print(" ", end="") for x in range(self.x)]
             [print("#", end="") for wi in range(self.width)]
             print("")
+
     def __str__(self):
-        """__str__ method so that it returns [Rectangle] (<id>) <x>/<y> - <width>/<height>"""
+        """__str__ method so that it returns
+            [Rectangle] (<id>) <x>/<y> - <width>/<height>
+        """
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
                                                        self.x, self.y,
                                                        self.width, self.height)
+
     def update(self, *args, **kwargs):
         """update the Rectangle
 
         Args:
             *args (list of ints): New attribute values.
-            **kwargs (ket/value of int): the assigning  key/value argument 
+            **kwargs (ket/value of int): the assigning  key/value argument
         """
         if args and len(args) != 0:
             i = 0
             for arg in args:
                 if i == 0:
                     if arg is None:
-                            self.__init__(self.width, self.height, self.x, self.y)
+                        self.__init__(self.width, self.height, self.x, self.y)
                     else:
                         self.id = arg
                 elif i == 1:
@@ -138,4 +142,3 @@ class Rectangle(Base):
                     self.x = v
                 elif k == "y":
                     self.y = v
-
