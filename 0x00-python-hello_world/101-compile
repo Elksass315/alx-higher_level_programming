@@ -1,0 +1,6 @@
+#!/bin/bash
+pyfile=$PYFILE
+outputfile=${pyfile%.py}
+outputfile="${outputfile}c"
+python -m compileall -b $pyfile
+mv "${pyfile}c" $outputfile
