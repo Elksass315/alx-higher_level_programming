@@ -3,7 +3,9 @@
 
 def print_reversed_list_integer(my_list=[]):
     """print"""
-
+    
+    if my_list == NULL:
+        return
     i = len(my_list) - 1
 
     while i >= 0:
