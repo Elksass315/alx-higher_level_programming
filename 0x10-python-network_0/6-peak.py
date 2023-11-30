@@ -14,26 +14,28 @@
 """
 
 
-peak(list_of_integers):
-    """ firnd peak"""
-    if not list_of_integers:
+def find_peak(list_of_integers):
+
+    if list_of_integers is None or len(list_of_integers) == 0:
         return None
 
-    list_length = len(list_of_integers)
-
-    # If the list has only one element, return it
-    if list_length == 1:
+    if len(list_of_integers) == 1:
         return list_of_integers[0]
 
-    # Check the first and last elements
-    if list_of_integers[0] >= list_of_integers[1]:
-        return list_of_integers[0]
-    if list_of_integers[-1] >= list_of_integers[-2]:
-        return list_of_integers[-1]
+    mid_idx = int(len(list_of_integers) / 2)
 
-    # Check the rest of the list
-    for i in range(1, list_length - 1):
-        if list_of_integers[i] >= list_of_integers[i - 1] and list_of_integers[i] >= list_of_integers[i + 1]:
-            return list_of_integers[i]
+    if mid_idx != len(list_of_integers) - 1:
+        if list_of_integers[mid_idx - 1] < list_of_integers[mid_idx] and\
+           list_of_integers[mid_idx + 1] < list_of_integers[mid_idx]:
+            return list_of_integers[mid_idx]
+    else:
+        if list_of_integers[mid_idx - 1] < list_of_integers[mid_idx]:
+            return list_of_integers[mid_idx]
+        else:
+            return list_of_integers[mid_idx - 1]
 
-    return None
+    if list_of_integers[mid_idx - 1] > list_of_integers[mid_idx]:
+        a_list = list_of_integers[0:mid_idx]
+    else:
+        a_list = list_of_integers[mid_idx + 1:]
+    return find_peak(a_list)
