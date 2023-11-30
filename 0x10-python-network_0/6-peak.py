@@ -14,11 +14,26 @@
 """
 
 
-def find_peak(list_of_integers):
-    """BRUTE force implementation for question
-    """
-    max_i = None
-    for ele in list_of_integers:
-        if max_i is None or max_i < ele:
-            max_i = ele
-    return max_i
+peak(list_of_integers):
+    """ firnd peak"""
+    if not list_of_integers:
+        return None
+
+    list_length = len(list_of_integers)
+
+    # If the list has only one element, return it
+    if list_length == 1:
+        return list_of_integers[0]
+
+    # Check the first and last elements
+    if list_of_integers[0] >= list_of_integers[1]:
+        return list_of_integers[0]
+    if list_of_integers[-1] >= list_of_integers[-2]:
+        return list_of_integers[-1]
+
+    # Check the rest of the list
+    for i in range(1, list_length - 1):
+        if list_of_integers[i] >= list_of_integers[i - 1] and list_of_integers[i] >= list_of_integers[i + 1]:
+            return list_of_integers[i]
+
+    return None
