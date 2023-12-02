@@ -7,6 +7,6 @@ def no_c(my_string):
 
     for i in my_string:
         if i not in c_list:
-            new = new + i
+            new += i
 
     return new
