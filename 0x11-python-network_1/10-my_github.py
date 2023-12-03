@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""script that send email using requests package"""
+"""using Git hub REST API"""
 
 
 if __name__ == "__main__":
