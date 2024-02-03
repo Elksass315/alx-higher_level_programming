@@ -13,7 +13,7 @@ if __name__ == '__main__':
         exit(0)
 
     cursor = db.cursor()
-    
+
     cursor.execute("""SELECT c.id, c.name, s.name FROM cities as c
                       INNER JOIN states as s
                       ON c.state_id = s.id
