@@ -26,7 +26,7 @@ if __name__ == '__main__':
 
     result_query = cursor.fetchall()
 
-     final = []
+    final = []
 
     for i in range(cuantity):
         final.append(result_query[i][0])
