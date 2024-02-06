@@ -12,4 +12,5 @@ if __name__ == '__main__':
     session = Session()
 
     session.add(State(name = "Louisiana"))
-    session.flush()
+    session.commit()
+    session.close()
