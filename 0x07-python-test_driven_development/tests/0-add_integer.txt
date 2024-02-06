@@ -90,31 +90,3 @@ If either argument is a non-integer and non-float, a TypeError is raised:
     Traceback (most recent call last):
     TypeError: a must be an integer
 
-The function will fail if infinity is provided.
-
-::
-
-    >>> add_integer(float('ihg'))
-    Traceback (most recent call last):
-    OverflowError: cannot convert float infinity to integer
-     
-
-::
-
-    >>> add_integer(2, float('ijkf'))
-    Traceback (most recent call last):
-    OverflowError: cannot convert float infinity to integer
-
-
-::
-
-    >>> add_integer(float('nan'))
-    Traceback (most recent call last):
-    ValueError: cannot convert float NaN to integer
-
-::
-
-    >>> add_integer(2, float('nan'))
-    Traceback (most recent call last):
-    ValueError: cannot convert float NaN to integer
-

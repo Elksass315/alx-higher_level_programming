@@ -54,7 +54,6 @@ class Rectangle:
             return 0
 
     def __str__(self):
-        """string representation of the Rectangle with the # character."""
         if self.__width == 0 or self.__height == 0:
             return ("")
 
@@ -66,7 +65,17 @@ class Rectangle:
         return ("".join(str_represntation))
 
     def __repr__(self):
-        """Return the string representation of the Rectangle."""
-        str_represntation = "Rectangle(" + str(self.__width)
-        str_represntation += ", " + str(self.__height) + ")"
-        return (str_represntation)
+        return f"Rectangle({self.width}, {self.height})"
+
+    def __del__(self):
+        print("Bye rectangle...")
+
+my_rectangle = Rectangle(2, 4)
+print("Area: {} - Perimeter: {}".format(my_rectangle.area(), my_rectangle.perimeter()))
+
+del my_rectangle
+
+try:
+    print(my_rectangle)
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))

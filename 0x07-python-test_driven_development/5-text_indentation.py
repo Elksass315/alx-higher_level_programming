@@ -21,7 +21,7 @@ def text_indentation(text):
 
     while X < len(text):
         print(text[X], end="")
-        if text[X] == "\n" or text[c] in ".?:":
+        if text[X] == "\n" or text[X] in ".?:":
             if text[X] in ".?:":
                 print("\n")
             X += 1
@@ -29,4 +29,3 @@ def text_indentation(text):
                 X += 1
             continue
         X += 1
-
