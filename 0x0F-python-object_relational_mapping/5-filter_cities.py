@@ -18,7 +18,7 @@ if __name__ == '__main__':
 
     cursor = db.cursor()
 
-    cuantity  = cursor.execute("""SELECT c.name FROM cities as c
+    cuantity = cursor.execute("""SELECT c.name FROM cities as c
                       INNER JOIN states as s
                       ON c.state_id = s.id
                       WHERE s.name = '{:s}'
