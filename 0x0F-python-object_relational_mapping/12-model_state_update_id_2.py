@@ -12,7 +12,6 @@ if __name__ == '__main__':
     session = Session()
 
     session.query(State).where(State.id == 2)\
-            .update({'name': 'New Mexico'})
+        .update({'name': 'New Mexico'})
     session.commit()
     session.close()
-
