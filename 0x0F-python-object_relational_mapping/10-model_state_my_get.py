@@ -8,10 +8,12 @@ if __name__ == '__main__':
 
     co = f'mysql+mysqldb://{sys.argv[1]}:{sys.argv[2]}@localhost/{sys.argv[3]}'
     engine = create_engine(co, pool_pre_ping=True)
+    Base.metadata.create_all(engine)
+
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    state = session.query(State).where(User.name == sys.argv[4]).order_by(State.id).first()
+    state = session.query(State).where(User.name == sys.argv[4])
 
     if (state is None):
         print('Nothing')
