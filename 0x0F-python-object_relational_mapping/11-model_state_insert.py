@@ -13,4 +13,9 @@ if __name__ == '__main__':
 
     session.add(State(name = "Louisiana"))
     session.commit()
+
+    states = session.query(State).where(State.name == 'Louisiana')
+
+    for row in states:
+        print(row.id)
     session.close()
