@@ -11,7 +11,7 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    state = session.query(State).filter(User.name == sys.argv[4]).order_by(State.id).first()
+    state = session.query(State).where(User.name == sys.argv[4]).order_by(State.id).first()
 
     if (state is None):
         print('Nothing')
