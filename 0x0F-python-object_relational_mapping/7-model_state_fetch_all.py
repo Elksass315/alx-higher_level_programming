@@ -10,6 +10,6 @@ if __name__ == '__main__':
                            pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     session = Session()
-    for stateId, state in session.query(State.id, State.name):
+    for stateId, state in session.query(State.id, State.name).filter(State.name.like("%a%")):
         print(f"{stateId}: {state}")
 

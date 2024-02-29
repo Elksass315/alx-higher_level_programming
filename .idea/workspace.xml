@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09785609-bc5b-4013-855d-5f62bf3fcdbf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/0x07-python-test_driven_development/0-add_integer.py" beforeDir="false" afterPath="$PROJECT_DIR$/0x07-python-test_driven_development/0-add_integer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0x07-python-test_driven_development/4-print_square.py" beforeDir="false" afterPath="$PROJECT_DIR$/0x07-python-test_driven_development/4-print_square.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0x07-python-test_driven_development/5-text_indentation.py" beforeDir="false" afterPath="$PROJECT_DIR$/0x07-python-test_driven_development/5-text_indentation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0x07-python-test_driven_development/tests/0-add_integer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/0x07-python-test_driven_development/tests/0-add_integer.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0x08-python-more_classes/1-rectangle.py" beforeDir="false" afterPath="$PROJECT_DIR$/0x08-python-more_classes/1-rectangle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0x08-python-more_classes/2-rectangle.py" beforeDir="false" afterPath="$PROJECT_DIR$/0x08-python-more_classes/2-rectangle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0x08-python-more_classes/4-rectangle.py" beforeDir="false" afterPath="$PROJECT_DIR$/0x08-python-more_classes/4-rectangle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0x0A-python-inheritance/5-base_geometry.py" beforeDir="false" afterPath="$PROJECT_DIR$/0x0A-python-inheritance/5-base_geometry.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0x0B-python-input_output/0-read_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/0x0B-python-input_output/0-read_file.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0x0B-python-input_output/1-write_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/0x0B-python-input_output/1-write_file.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0x0B-python-input_output/2-append_write.py" beforeDir="false" afterPath="$PROJECT_DIR$/0x0B-python-input_output/2-append_write.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0x0B-python-input_output/9-student.py" beforeDir="false" afterPath="$PROJECT_DIR$/0x0B-python-input_output/9-student.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0x0F-python-object_relational_mapping/7-model_state_fetch_all.py" beforeDir="false" afterPath="$PROJECT_DIR$/0x0F-python-object_relational_mapping/7-model_state_fetch_all.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +22,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -44,18 +35,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Elksass/Desktop/p/alx-higher_level_programming&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Elksass/Desktop/p/AirBnB_clone-V2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -71,7 +62,9 @@
       <workItem from="1702501959276" duration="28000" />
       <workItem from="1703600604095" duration="16333000" />
       <workItem from="1706358581766" duration="1353000" />
-      <workItem from="1707247899936" duration="722000" />
+      <workItem from="1707247899936" duration="6917000" />
+      <workItem from="1707315820444" duration="5000" />
+      <workItem from="1707500950783" duration="745000" />
     </task>
     <servers />
   </component>
@@ -90,6 +83,7 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/alx_higher_level_programming$main.coverage" NAME="main Coverage Results" MODIFIED="1707501081772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../pythonProject" />
     <SUITE FILE_PATH="coverage/alx_higher_level_programming$0_add_integer.coverage" NAME="0-add_integer Coverage Results" MODIFIED="1703600842176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/0x07-python-test_driven_development" />
     <SUITE FILE_PATH="coverage/alx_higher_level_programming$4_rectangle.coverage" NAME="4-rectangle Coverage Results" MODIFIED="1703608921560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/0x08-python-more_classes" />
     <SUITE FILE_PATH="coverage/alx_higher_level_programming$4_main.coverage" NAME="4-main Coverage Results" MODIFIED="1703709883442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/0x0B-python-input_output" />
