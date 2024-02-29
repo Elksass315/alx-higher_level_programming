@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""lists all State objects from the database hbtn_0e_6_usa"""
+"""prints the first State object from the database hbtn_0e_6_usa"""
 if __name__ == '__main__':
     from model_state import Base, State
     import sys
@@ -10,5 +10,11 @@ if __name__ == '__main__':
     engine = create_engine(co, pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     session = Session()
-    for stateId, state in session.query(State.id, State.name).filter(State.name.like("%a%")):
-        print(f"{stateId}: {state}")
+
+    state = session.query(State).order_by(State.id).first()
+
+    if (state is None):
+        print('Nothing')
+    else:
+        print('{:d}: {:s}'.format(state.id, state.name))
+    session.close()
