@@ -1,4 +1,4 @@
-$('#update_header').click(function () {
+$("DIV#update_header").on("click", function () {
     const el = $('header')
     el.text('New Header!!!');
 });
